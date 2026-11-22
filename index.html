@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio | Muévete por tu Salud – Teleeducación en Salud</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <span class="brand-badge">RED</span>
+        <span>Muévete por tu Salud</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="por-que-activarnos.html" class="">¿Por qué activarnos?</a></li>
+        <li><a href="rutinas.html" class="">Rutinas prácticas</a></li>
+        <li><a href="mitos-evaluacion.html" class="">Mitos y evaluación</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-tag">Promoción de la Salud y Prevención de la Enfermedad</span>
+        <h1>Muévete por tu Salud: Estrategia Digital de Actividad Física</h1>
+        <p>Bienvenido a nuestro espacio de teleeducación en salud. Encuentra herramientas prácticas, sencillas y seguras para reducir el sedentarismo y mejorar tu bienestar físico y mental desde casa o el trabajo.</p>
+        <div class="btn-group">
+          <a href="por-que-activarnos.html" class="btn btn-primary">Comenzar recorrido</a>
+          <a href="rutinas.html" class="btn btn-outline">Ver pausas activas</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <!-- Ilustración SVG vectorial propia (no requiere archivos externos) -->
+        <svg viewBox="0 0 240 180" width="220" height="165" aria-label="Actividad física saludable">
+          <circle cx="120" cy="90" r="78" fill="rgba(13, 148, 136, 0.25)" />
+          <circle cx="120" cy="42" r="14" fill="#ccfbf1" />
+          <path d="M120 60 L120 105 M120 72 L88 55 M120 72 L152 55 M120 105 L95 145 M120 105 L145 145"
+                stroke="#ffffff" stroke-width="8" stroke-linecap="round" fill="none" />
+          <path d="M55 155 Q120 135 185 155" stroke="#5eead4" stroke-width="4" fill="none" stroke-linecap="round" />
+        </svg>
+        <p style="margin-top: 0.5rem; font-size: 0.95rem; color: #ccfbf1;"><strong>Meta OMS:</strong> Al menos 150 minutos de actividad física moderada a la semana.</p>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="section-header">
+      <h2>¿Qué aprenderás en este recurso educativo digital?</h2>
+      <p>Explora las tres secciones temáticas diseñadas para fortalecer tus hábitos saludables diarios.</p>
+    </div>
+
+    <div class="grid-3">
+      <article class="card card-primary-top">
+        <span class="pill-stat">Pantalla 1</span>
+        <h3>¿Por qué activarnos?</h3>
+        <p>Conoce la diferencia entre actividad física y ejercicio, identifica los riesgos del sedentarismo prolongado y evalúa tu nivel semanal.</p>
+        <p style="margin-top: 1rem;"><a href="por-que-activarnos.html" style="color: var(--accent-dark); font-weight: 700;">Explorar pantalla 1 →</a></p>
+      </article>
+
+      <article class="card card-accent-top">
+        <span class="pill-stat">Pantalla 2</span>
+        <h3>Rutinas prácticas</h3>
+        <p>Aprende pausas activas de 5 minutos para tu jornada laboral o de estudio y una rutina básica de 20 minutos sin necesidad de gimnasio.</p>
+        <p style="margin-top: 1rem;"><a href="rutinas.html" style="color: var(--accent-dark); font-weight: 700;">Explorar pantalla 2 →</a></p>
+      </article>
+
+      <article class="card card-amber-top">
+        <span class="pill-stat">Pantalla 3</span>
+        <h3>Mitos y evaluación</h3>
+        <p>Derriba las excusas más comunes sobre el ejercicio, revisa consejos clave de hidratación y participa en la evaluación de este recurso.</p>
+        <p style="margin-top: 1rem;"><a href="mitos-evaluacion.html" style="color: var(--accent-dark); font-weight: 700;">Explorar pantalla 3 →</a></p>
+      </article>
+    </div>
+
+    <section class="video-box">
+      <h3>Recurso Multimedia: Beneficios de la Actividad Física para tu Salud</h3>
+      <p style="color: var(--text-muted);">Observa este video educativo sobre cómo el movimiento diario protege tu corazón y tu mente.</p>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/qELDncaLfjo"
+          title="Beneficios de la actividad física"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p style="margin-top: 0.85rem; font-size: 0.92rem;">
+        ¿Problemas para reproducir? <a href="https://youtu.be/qELDncaLfjo" target="_blank" rel="noopener noreferrer" style="color: var(--accent-dark); font-weight: 700;">Ver video directamente en YouTube →</a>
+      </p>
+    </section>
+
+  <footer>
+    <p><strong>Estrategia de Teleeducación en Salud – Estilos Saludables: Actividad Física</strong></p>
+    <p>Universidad Nacional Abierta y a Distancia (UNAD) • ECISA • Curso: Telesalud (15001) • Resolución 2654 de 2019</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

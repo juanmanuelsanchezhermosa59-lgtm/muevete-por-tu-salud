@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Por qué activarnos? | Muévete por tu Salud</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <span class="brand-badge">RED</span>
+        <span>Muévete por tu Salud</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="">Inicio</a></li>
+        <li><a href="por-que-activarnos.html" class="active">¿Por qué activarnos?</a></li>
+        <li><a href="rutinas.html" class="">Rutinas prácticas</a></li>
+        <li><a href="mitos-evaluacion.html" class="">Mitos y evaluación</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="section-header">
+      <span class="pill-stat">Pantalla 1 • Fundamentación en Salud</span>
+      <h2>El impacto del movimiento en tu salud</h2>
+      <p>Comprender cómo responde nuestro cuerpo al movimiento es el primer paso para prevenir enfermedades crónicas.</p>
+    </div>
+
+    <div class="grid-3">
+      <article class="card card-primary-top">
+        <h3>Actividad física vs. Ejercicio</h3>
+        <p>La <strong>actividad física</strong> es cualquier movimiento corporal que produce gasto de energía: caminar, subir escaleras, bailar o realizar labores del hogar.</p>
+        <p style="margin-top: 0.75rem;">El <strong>ejercicio</strong> es una actividad planificada, estructurada y repetitiva para mejorar la condición física. ¡Ambos suman para cuidar tu salud!</p>
+      </article>
+
+      <article class="card card-amber-top">
+        <h3>Riesgos del sedentarismo</h3>
+        <p>Permanecer sentado más de 6 a 8 horas diarias frente a pantallas incrementa el riesgo de:</p>
+        <ul>
+          <li>Hipertensión arterial y enfermedad cardiovascular.</li>
+          <li>Diabetes mellitus tipo 2 y sobrepeso.</li>
+          <li>Dolores cervicales, lumbares y fatiga muscular.</li>
+          <li>Estrés, ansiedad y alteraciones del sueño.</li>
+        </ul>
+      </article>
+
+      <article class="card card-accent-top">
+        <h3>Beneficios de moverte</h3>
+        <p>Acumular al menos <strong>150 minutos semanales</strong> de actividad física moderada genera beneficios inmediatos:</p>
+        <ul>
+          <li>Fortalece el corazón y mejora la circulación.</li>
+          <li>Regula los niveles de glucosa y colesterol.</li>
+          <li>Libera endorfinas que mejoran el estado de ánimo.</li>
+          <li>Aumenta la energía y la concentración diaria.</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Herramienta interactiva: Autoevaluación de minutos semanales -->
+    <section class="interactive-box">
+      <h3>Autoevaluación Rápida: ¿Cumples la meta semanal de la OMS?</h3>
+      <p>Ingresa cuántos minutos aproximados caminas o realizas actividad física moderada durante toda la semana:</p>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="minutosSemanales">Minutos de actividad física a la semana:</label>
+          <input type="number" id="minutosSemanales" min="0" max="2000" placeholder="Ej. 90" />
+        </div>
+        <button type="button" class="btn btn-primary" onclick="evaluarActividad()">Calcular mi nivel</button>
+      </div>
+      <div id="resultadoActividad" class="result-banner"></div>
+    </section>
+
+    <div class="btn-group">
+      <a href="index.html" class="btn btn-outline" style="color: var(--primary); border-color: var(--primary);">← Volver al Inicio</a>
+      <a href="rutinas.html" class="btn btn-primary">Siguiente: Rutinas prácticas →</a>
+    </div>
+  </main>
+
+  <footer>
+    <p><strong>Estrategia de Teleeducación en Salud – Estilos Saludables: Actividad Física</strong></p>
+    <p>Universidad Nacional Abierta y a Distancia (UNAD) • ECISA • Curso: Telesalud (15001) • Resolución 2654 de 2019</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

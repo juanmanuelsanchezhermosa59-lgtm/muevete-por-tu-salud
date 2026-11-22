@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rutinas prácticas | Muévete por tu Salud</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <span class="brand-badge">RED</span>
+        <span>Muévete por tu Salud</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="">Inicio</a></li>
+        <li><a href="por-que-activarnos.html" class="">¿Por qué activarnos?</a></li>
+        <li><a href="rutinas.html" class="active">Rutinas prácticas</a></li>
+        <li><a href="mitos-evaluacion.html" class="">Mitos y evaluación</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="section-header">
+      <span class="pill-stat">Pantalla 2 • Guía Práctica</span>
+      <h2>Ejercicios fáciles para tu día a día</h2>
+      <p>No necesitas equipamiento costoso. Integra estas pausas activas y rutinas básicas en tu hogar o lugar de trabajo.</p>
+    </div>
+
+    <div class="grid-2">
+      <article class="card card-accent-top">
+        <h3>1. Pausas activas (5 minutos cada 2 horas)</h3>
+        <p>Ideales si trabajas o estudias frente a un computador:</p>
+        <ul>
+          <li><strong>Cuello y hombros:</strong> Inclina suavemente la cabeza hacia cada lado por 10 segundos y realiza 10 círculos amplios con los hombros hacia atrás.</li>
+          <li><strong>Espalda y cintura:</strong> De pie, entrelaza las manos, estira los brazos hacia el techo durante 15 segundos y gira suavemente el tronco de lado a lado.</li>
+          <li><strong>Piernas y circulación:</strong> Realiza 15 elevaciones de talones (poniéndote de puntillas) para activar el retorno venoso.</li>
+        </ul>
+      </article>
+
+      <article class="card card-primary-top">
+        <h3>2. Rutina básica en casa (20 minutos)</h3>
+        <p>Realízala de 3 a 5 veces por semana a intensidad moderada:</p>
+        <ul>
+          <li><strong>Calentamiento (3 min):</strong> Marcha suave en el puesto moviendo los brazos de forma coordinada.</li>
+          <li><strong>Sentadillas asistidas (3 series x 10 rep.):</strong> Siéntate y levántate de una silla firme manteniendo la espalda recta.</li>
+          <li><strong>Flexiones en pared (3 series x 10 rep.):</strong> Apoya las manos en la pared a la altura del pecho y flexiona los codos.</li>
+          <li><strong>Caminata a paso rápido (10 min):</strong> En casa, en el parque o alrededor de tu cuadra.</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Temporizador interactivo de pausa activa -->
+    <section class="interactive-box" style="text-align: center;">
+      <h3>Temporizador Interactivo de Pausa Activa (5 Minutos)</h3>
+      <p id="timerStatus">Presiona "Iniciar 5 minutos" cada 2 horas de trabajo sentado.</p>
+      <div class="timer-display" id="timerDisplay">05:00</div>
+      <div class="btn-group" style="justify-content: center;">
+        <button type="button" class="btn btn-primary" onclick="iniciarPausaActiva()">Iniciar 5 minutos</button>
+        <button type="button" class="btn btn-amber" onclick="reiniciarPausaActiva()">Reiniciar</button>
+      </div>
+    </section>
+
+    <div class="btn-group">
+      <a href="por-que-activarnos.html" class="btn btn-outline" style="color: var(--primary); border-color: var(--primary);">← Anterior</a>
+      <a href="mitos-evaluacion.html" class="btn btn-primary">Siguiente: Mitos y evaluación →</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Elaborado por: <strong> Sara Sofia Losda Pastrana</strong> • Estudiante de Tecnologia en Imagenes Diagnosticas</p>
+    <p>Universidad Nacional Abierta y a Distancia (UNAD) • ECISA • Curso: Telesalud (15001) • Resolución 2654 de 2019</p>
+    
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
